@@ -1,0 +1,13 @@
+$h1: (font-family: Noto Sans, font-style: normal, font-weight: bold, font-size: 50px, line-height: 68px);
+$h2:( font-family: Poppins, font-style: normal, font-weight: bold, font-size: 50px, line-height: 75px, text-transform: uppercase);
+$h3:( font-family: Noto Sans, font-style: normal, font-weight: 600, font-size: 30px, line-height: 150%);
+$h4:( font-family: Noto Sans, font-style: normal, font-weight: 600, font-size: 25px, line-height: 34px);
+$h5:( font-family: Noto Sans, font-style: normal, font-weight: 500, font-size: 20px, line-height: 27px);
+$h6:( font-family: Noto Sans, font-style: normal, font-weight: normal, font-size: 17px, line-height: 23px);
+$button1:( font-family: Noto Sans, font-style: normal, font-weight: 500, font-size: 20px, line-height: 27px);
+$button2_forms:( font-family: Noto Sans, font-style: normal, font-weight: normal, font-size: 15px, line-height: 20px);
+$links:( font-family: Noto Sans, font-style: normal, font-weight: 500, font-size: 15px, line-height: 20px);
+$tabs:( font-family: Noto Sans, font-style: normal, font-weight: normal, font-size: 15px, line-height: 20px);
+$span1:(font-family: Noto Sans, font-style: normal, font-weight: 500, font-size: 20px, line-height: 27px);
+$span2: (font-family: Noto Sans, font-style: normal, font-weight: 300, font-size: 14px, line-height: 19px);
+

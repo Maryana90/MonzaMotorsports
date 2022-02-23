@@ -1,0 +1,485 @@
+@import "_null.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+//typography
+$fnt-st: normal;
+$fnt-fam-1: 'Noto Sans',
+sans-serif;
+$fnt-fam-2: 'Poppins',
+sans-serif;
+//colors
+$Color-primary-100:(#000000);
+$Color-primary-200:(#f8f8f8);
+$Color-primary-300:(#DF4E3C);
+$Color-secondary-100:(#AEAEAE);
+$Color-secondary-200:(#8D8D8D);
+$Color-secondary-300:(#BDBDBD);
+$Color-secondary-400:(#C4C4C4);
+$Color-secondary-500:(#ffffff);
+$Color-secondary-600:(#959595);
+$Color-secondary-700:(#507A36);
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* body */
+
+body {
+    background-color: $Color-primary-200;
+    height: 100%;
+}
+
+#wrapper {
+    position: relative;
+}
+
+
+/* HEADER */
+
+.header {
+    min-width: 100%;
+    height: 688px;
+    left: -168px;
+    top: 0px;
+    margin: 0;
+    padding: 19px 100px;
+    background-image: url('../../images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .navbar {
+        .container-fluid {
+            .logo {
+                width: 139px;
+                height: 35px;
+            }
+            .collapse {
+                padding-top: 8px;
+                .navbar-nav {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    .nav-item {
+                        margin-right: 40px;
+                        a {
+                            color: $Color-primary-200;
+                            font-family: $fnt-fam-1;
+                            font-style: $fnt-st;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ;
+    .about {
+        position: absolute;
+        margin-top: 120px;
+        color: $Color-primary-200;
+        font-family: $fnt-fam-2;
+        font-style: $fnt-st;
+        h1 {
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 68px;
+        }
+        ;
+        .about-block {
+            position: absolute;
+            top: 100px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            .block {
+                right: 20px;
+                padding-right: 10px;
+                width: 295px;
+                display: inline-block;
+                justify-content: space-between;
+                vertical-align: top;
+            }
+        }
+        ;
+        .btn {
+            position: absolute;
+            border: 2px solid $Color-primary-200;
+            box-sizing: border-box;
+            border-radius: 15px;
+            width: 296px;
+            height: 56px;
+            top: 307px;
+            color: $Color-primary-200;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 27px;
+            &:hover {
+                background-color: $Color-primary-200;
+                ;
+                color: $Color-primary-100;
+            }
+            ;
+            &:active {
+                background-color: #11ffee00;
+                ;
+                color: $Color-primary-200;
+            }
+            ;
+        }
+        ;
+    }
+}
+
+
+/* CONTENT */
+
+.content {
+    margin: auto 100px;
+    // position: relative;
+    h2 {
+        margin-top: 98px;
+        margin-bottom: 80px;
+        color: $Color-secondary-100;
+        font-family: $fnt-fam-2;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 50px;
+        line-height: 75px;
+        text-align: center;
+    }
+}
+
+.filters {
+    justify-content: space-between;
+    margin-bottom: 13px;
+    .filter-buttons {
+        width: 100%;
+        margin-bottom: 10px;
+        .btn-group {
+            margin-bottom: 5px;
+            justify-content: space-between;
+            .dropdown-toggle {
+                color: $Color-primary-200;
+                font-family: $fnt-fam-1;
+                border-color: #E5E5E5;
+                // width: 170px;
+                height: 48px;
+                border-radius: 15px;
+                span {
+                    width: 111px;
+                    height: 22.08px;
+                    color: $Color-primary-100;
+                    font-family: $fnt-fam-1;
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+            }
+        }
+        ;
+        .btn-result {
+            margin-bottom: 5px;
+            width: 290px;
+            height: 48px;
+            border-radius: 15px;
+            background-color: $Color-primary-300;
+            color: $Color-primary-200;
+        }
+    }
+    ;
+    .filter-checkbox {
+        margin-top: 5px;
+        .input-group {
+            .input-group-text {
+                background-color: #11ffee00;
+                border: none;
+                margin-right: 8px;
+                margin-left: -12px;
+            }
+            ;
+            span {
+                margin-top: 5px;
+                font-family: $fnt-fam-1;
+                color: $Color-secondary-200;
+                font-size: 12px;
+                line-height: 16px;
+                .sort-by {
+                    right: 0;
+                }
+            }
+            ;
+        }
+    }
+}
+
+;
+.placeholder-area {
+    margin: auto -10px 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: $fnt-fam-1;
+    .grayscale {
+        filter: grayscale(1);
+    }
+    .card {
+        margin: 10px;
+        border: none;
+        background-color: $Color-secondary-500;
+        .new-car {
+            position: relative;
+            .new {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 66.5px;
+                height: 24px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background-color: $Color-primary-100;
+                color: $Color-secondary-500;
+                font-family: $fnt-fam-2;
+                font-style: $fnt-st;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+                padding-top: 3px;
+            }
+        }
+        ;
+        .sold-car {
+            position: relative;
+            .sold {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                height: 24px;
+                color: $Color-secondary-500;
+                font-family: $fnt-fam-2;
+                font-style: $fnt-st;
+                font-weight: bold;
+                font-size: 50px;
+                line-height: 75px;
+                top: 63px;
+                z-index: 100;
+                text-transform: uppercase;
+            }
+        }
+        ;
+        img {
+            width: 100%;
+        }
+        ;
+        .card-body {
+            margin: 20px;
+            padding: 0;
+            .card-info {
+                margin-bottom: 10px;
+                h4 {
+                    display: inline;
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: $Color-primary-100;
+                    line-height: 23px;
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+                ;
+                span {
+                    padding-right: 8px;
+                    font-weight: normal;
+                    font-family: $fnt-fam-2;
+                    color: $Color-secondary-200;
+                    line-height: 25px;
+                }
+            }
+            ;
+            .card-text1 {
+                margin-top: 10px;
+                margin-bottom: 6px;
+                color: $Color-secondary-200;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 19px;
+                span {
+                    padding-right: 8px;
+                    .line {
+                        width: 18px;
+                    }
+                }
+            }
+            .card-text2 {
+                margin-top: 20px;
+                margin-bottom: 35px;
+                color: $Color-primary-100;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 27px;
+            }
+        }
+        ;
+    }
+}
+
+;
+.question-form {
+    height: 180px;
+    margin: auto -100px;
+    background-color: $Color-primary-100;
+    color: $Color-primary-200;
+    .question-form-inner {
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-top: 45px;
+    }
+    .found-info {
+        max-width: 429px;
+        display: inline-block;
+        justify-content: space-between;
+        vertical-align: middle;
+        .found-question {
+            font-family: 'Noto Sans', sans-serif;
+            font-style: $fnt-st;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 34px;
+            margin-bottom: 10px;
+        }
+        ;
+        .found-answer {
+            margin-top: 10px;
+            font-family: $fnt-fam-1;
+            font-style: $fnt-st;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 20px
+        }
+    }
+    ;
+    .email-input {
+        display: inline-block;
+        justify-content: space-between;
+        vertical-align: middle;
+        font-family: $fnt-fam-1;
+        font-style: $fnt-st;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: $Color-primary-200;
+        position: absolute;
+        right: 100px;
+        .row {
+            margin: 0;
+            .col-auto {
+                input {
+                    width: 505px;
+                    height: 54px;
+                    border: 1px solid;
+                    border-color: $Color-secondary-300;
+                    box-sizing: border-box;
+                    border-radius: 15px;
+                    color: $Color-primary-200;
+                    padding-left: 10px;
+                }
+                ;
+                button {
+                    width: 190px;
+                    height: 54px;
+                    background-color: $Color-primary-200;
+                    border-radius: 15px;
+                    color: $Color-primary-100;
+                    border: none;
+                    &:hover {
+                        background-color: $Color-primary-100;
+                        color: $Color-primary-200;
+                        border: 2px solid;
+                        border-color: $Color-primary-200;
+                    }
+                    ;
+                    &:active {
+                        background-color: $Color-primary-200;
+                        color: $Color-primary-100;
+                        border: none;
+                    }
+                    ;
+                    &:disabled {
+                        background-color: $Color-primary-200;
+                    }
+                }
+            }
+        }
+    }
+}
+
+;
+.popular-questions {
+    h2 {
+        margin-top: 120px;
+        margin-bottom: 80px;
+        color: $Color-secondary-100;
+        font-family: $fnt-fam-2;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 50px;
+        line-height: 75px;
+        text-align: center;
+    }
+}
+
+// content end
+
+/* FOOTER */
+
+footer {
+    // position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 121px;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    background-color: $Color-primary-100;
+    .footer-logo {
+        margin-left: 80px;
+        margin-top: 37px;
+        width: 191px;
+        height: 48px;
+    }
+    ;
+    .footer-links {
+        text-align: center;
+        padding-top: 52px;
+        .footer-list {
+            li {
+                display: inline;
+                margin: auto 20px;
+                a {
+                    font-family: $fnt-fam-2;
+                    font-style: $fnt-st;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: $Color-primary-200;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    ;
+    .icons {
+        right: 104px;
+        padding-top: 0;
+        a img {
+            display: inline;
+            margin: 52px 0;
+        }
+    }
+}
